@@ -5,7 +5,7 @@ from users.models import User
 
 class Room(models.Model):
     number = models.CharField(max_length=50)
-    price = models.IntegerField()
+    price = models.FloatField()
     beds = models.IntegerField()
 
     class Meta:
